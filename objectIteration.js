@@ -31,25 +31,25 @@ const fruits = [
   },
 ];
 
-// 1) Using `getFruitColor` function that accepts a `fruit` object as an argument, and returns the color of that `fruit` object
+// 1) Write a `getFruitColor` function that accepts a `fruit` object as an argument, and returns the color of that `fruit` object
 function getFruitColor(fruit) {
   // write your code here...
 }
 // console.log(getFruitColor(fruits[0])); // Outputs: Red
 
-// 2) Using `isFruitTasteMatching` function that accepts a `fruit` object as an argument and a `taste` string, return  true if the fruit's taste matches the provided description, otherwise returns false
+// 2) Write a `isFruitTasteMatching` function that accepts a `fruit` object as an argument and a `taste` string, return  true if the fruit's taste matches the provided description, otherwise returns false
 function isFruitTasteMatching(fruit, taste) {
   // write your code here...
 }
 // console.log(isFruitTasteMatching(fruits[2], "Citrusy")); // Outputs: true
 
-// 3) Using `addFruit` function that accepts an array of fruit object `fruits` and a `fruit` object (with id, name, color, and taste), it will add the new fruit to the end of the array, then returns the updated array
-function addFruit(fruits, fruit) {
+// 3) Write a `addFruit` function that accepts an array of fruit object `fruits` and the properties of a fruit (id, name, color, taste), it will add the new fruit to the end of the array, then returns the updated array
+function addFruit(fruits, id, name, color, taste) {
   // write your code here...
 }
-// console.log(addFruit(fruits, { id: 506, name: "Mango", color: "Yellow", taste: "Sweet" }));
+// console.log(addFruit(fruits,  506,  "Mango", "Yellow", "Sweet" ));
 
-// Using `countSweetFruits`function that accepts an array of fruit objects `fruits`, and return the number of fruits with a sweet taste
+// 4) Write a `countSweetFruits`function that accepts an array of fruit objects `fruits`, and return the number of fruits with a sweet taste
 function countSweetFruits(fruits) {
   // write your code here...
 }

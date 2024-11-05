@@ -66,7 +66,8 @@ describe("Fruit Data Functions", () => {
         color: "Yellow",
         taste: "Sweet",
       };
-      const updatedFruits = addFruit([...fruits], newFruit);
+      const { id, name, color, taste } = newFruit();
+      const updatedFruits = addFruit([...fruits], id, name, color, taste);
       expect(updatedFruits).toContainEqual(newFruit);
       expect(updatedFruits.length).toBe(fruits.length + 1);
       expect(updatedFruits[updatedFruits.length - 1]).toEqual(newFruit);
@@ -76,12 +77,13 @@ describe("Fruit Data Functions", () => {
   describe("countSweetFruits", () => {
     it("should count the number of fruits with a sweet taste", () => {
       expect(countSweetFruits(fruits)).toBe(3);
-      const addedFruits = addFruit([...fruits], {
-        id: 506,
-        name: "Mango",
-        color: "Yellow",
-        taste: "Sweet",
-      });
+      const addedFruits = addFruit(
+        [...fruits],
+        506,
+        "Mango",
+        "Yellow",
+        "Sweet"
+      );
       expect(countSweetFruits(addedFruits)).toBe(4);
     });
   });
