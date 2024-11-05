@@ -55,12 +55,12 @@ function countSweetFruits(fruits) {
 }
 // console.log(countSweetFruits(fruits)); // Outputs: 4
 
-// 5) Write a function `fruitByTaste` that takes an array of fruit objects `fruits` and returns an object where the keys are tastes and the values are arrays of fruit names
+// 5) 🌶️🌶️🌶️ Write a function `fruitByTaste` that takes an array of fruit objects `fruits` and returns an object where the keys are tastes and the values are arrays of fruit names
 function fruitByTaste(fruits) {
   // Write your code here...
 }
-// console.log(fruitByTaste(fruits));
 /**
+ * console.log(fruitByTaste(fruits));
  * Output:
  * {
  *    Sweet: ["Apple", "Banana", "Grapes"],
