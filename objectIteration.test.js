@@ -66,7 +66,7 @@ describe("Fruit Data Functions", () => {
         color: "Yellow",
         taste: "Sweet",
       };
-      const { id, name, color, taste } = newFruit();
+      const { id, name, color, taste } = newFruit;
       const updatedFruits = addFruit([...fruits], id, name, color, taste);
       expect(updatedFruits).toContainEqual(newFruit);
       expect(updatedFruits.length).toBe(fruits.length + 1);
