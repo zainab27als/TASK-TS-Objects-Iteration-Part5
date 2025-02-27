@@ -1,12 +1,13 @@
-const {
-  getFruitColor,
-  isFruitTasteMatching,
+import {
+  Fruit,
   addFruit,
   countSweetFruits,
-} = require("./objectIteration");
+  getFruitColor,
+  isFruitTasteMatching,
+} from "../fruits";
 
-describe("Fruit Data Functions", () => {
-  let fruits;
+describe("Fruits", () => {
+  let fruits: Fruit[];
 
   beforeEach(() => {
     fruits = [
@@ -20,41 +21,19 @@ describe("Fruit Data Functions", () => {
 
   describe("getFruitColor", () => {
     it("should return the color of the fruit", () => {
-      expect(getFruitColor(fruits[0])).toBe("Red");
-    });
-
-    it("should return the color of the fruit", () => {
-      expect(getFruitColor(fruits[1])).toBe("Yellow");
-    });
-
-    it("should return the color of the fruit", () => {
-      expect(getFruitColor(fruits[2])).toBe("Orange");
-    });
-
-    it("should return the color of the fruit", () => {
-      expect(getFruitColor(fruits[3])).toBe("Purple");
-    });
-
-    it("should return the color of the fruit", () => {
-      expect(getFruitColor(fruits[4])).toBe("Green");
+      for (let fruit of fruits) expect(getFruitColor(fruit)).toBe(fruit.color);
     });
   });
 
   describe("isFruitTasteMatching", () => {
     it("should return true if the fruit's taste matches the provided description", () => {
-      expect(isFruitTasteMatching(fruits[2], "Citrusy")).toBe(true);
+      for (let fruit of fruits)
+        expect(isFruitTasteMatching(fruit, fruit.taste)).toBe(true);
     });
 
     it("should return false if the fruit's taste does not match the provided description", () => {
-      expect(isFruitTasteMatching(fruits[0], "Citrusy")).toBe(false);
-    });
-
-    it("should return true if the fruit's taste matches the provided description", () => {
-      expect(isFruitTasteMatching(fruits[1], "Sweet")).toBe(true);
-    });
-
-    it("should return false if the fruit's taste does not match the provided description", () => {
-      expect(isFruitTasteMatching(fruits[4], "Sweet")).toBe(false);
+      for (let fruit of fruits)
+        expect(isFruitTasteMatching(fruit, "Bitter")).toBe(false);
     });
   });
 

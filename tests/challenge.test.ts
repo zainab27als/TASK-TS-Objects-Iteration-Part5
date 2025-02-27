@@ -1,7 +1,8 @@
-const { fruitByTaste } = require("./objectIteration");
+import { fruitByTaste } from "../challenge";
+import { Fruit } from "../fruits";
 
-xdescribe("🌶️🌶️🌶️ Challenge", () => {
-  let fruits;
+describe("🌶️🌶️🌶️ Challenge", () => {
+  let fruits: Fruit[];
 
   beforeEach(() => {
     fruits = [
