@@ -1,10 +1,10 @@
-# JS-Iteration-Over-Objects-Part5
+# TS-Objects-Iteration-Part5
 
 ## Instructions
 
-- Fork and clone [this repository](https://github.com/JoinCODED/JS-Iteration-Over-Objects-Part5) to your `Development` folder.
+- Fork and clone [this repository](https://github.com/JoinCODED/TS-Objects-Iteration-Part5) to your `Development` folder.
   - ```bash
-    git clone git@github.com:<your_username>/JS-Iteration-Over-Objects-Part5.git
+    git clone git@github.com:<your_username>/TS-Objects-Iteration-Part5.git
     ```
 
 ### Running The Tests
