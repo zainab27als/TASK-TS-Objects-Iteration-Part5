@@ -44,11 +44,11 @@ const fruits: Fruit[] = [
 ];
 
 /**
- * 1) Using `getFruitColor` function that:
+ * `getFruitColor` function that:
  * - Accepts a `fruit` parameter of type `Fruit`.
  * - Returns the color of the specified fruit.
  * Example:
- * getFruitColor(fruits[0]); // => "Red"
+ *  getFruitColor(fruits[0]); // => "Red"
  */
 function getFruitColor(fruit: Fruit): string {
   // write your code here...
@@ -57,13 +57,13 @@ function getFruitColor(fruit: Fruit): string {
 }
 
 /**
- * 2) Using `isFruitTasteMatching` function:
+ * `isFruitTasteMatching` function:
  * - Accepts:
  *   - A `fruit` parameter of type `Fruit`.
  *   - A `taste` parameter of type `string`.
  * - Returns `true` if the fruit's taste matches the provided description, otherwise returns `false`.
  * Example:
- * isFruitTasteMatching(fruits[2], "Citrusy"); // => true
+ *  isFruitTasteMatching(fruits[2], "Citrusy"); // => true
  */
 function isFruitTasteMatching(fruit: Fruit, taste: string): boolean {
   // write your code here...
@@ -72,7 +72,7 @@ function isFruitTasteMatching(fruit: Fruit, taste: string): boolean {
 }
 
 /**
- * 3) Using `addFruit` function:
+ * `addFruit` function:
  * - Accepts:
  *   - A `fruits` array of type `Fruit[]`.
  *   - An `id` of type `number`
@@ -82,12 +82,12 @@ function isFruitTasteMatching(fruit: Fruit, taste: string): boolean {
  * - Creates a new `Fruit` object and adds it to the end of the array.
  * - Returns the updated array of fruits.
  * Example:
- * addFruit(fruits, 506, "Mango", "Yellow", "Sweet");
- * // => [
- * //   { id: 501, name: "Apple", color: "Red", taste: "Sweet" },
- * //   ...
- * //   { id: 506, name: "Mango", color: "Yellow", taste: "Sweet" }
- * // ]
+ *  addFruit(fruits, 506, "Mango", "Yellow", "Sweet");
+ *    // => [
+ *    //   { id: 501, name: "Apple", color: "Red", taste: "Sweet" },
+ *    //   ...
+ *    //   { id: 506, name: "Mango", color: "Yellow", taste: "Sweet" }
+ *    // ]
  */
 function addFruit(
   fruits: Fruit[],
@@ -102,12 +102,12 @@ function addFruit(
 }
 
 /**
- * 4) Using `countSweetFruits` function:
+ * `countSweetFruits` function:
  * - Accepts:
  *   - A `fruits` array of type `Fruit[]`.
  * - Returns the number of fruits with a sweet taste.
  * Example:
- * countSweetFruits(fruits); // => 3
+ *  countSweetFruits(fruits); // => 3
  */
 function countSweetFruits(fruits: Fruit[]): number {
   // write your code here...
