@@ -1,3 +1,4 @@
+// don't change this import statement
 import { Fruit } from "./fruits";
 
 /**
@@ -41,19 +42,26 @@ interface FruitByTaste {
   [key: string]: string[];
 }
 
-// 5) 🌶️🌶️🌶️ Write a function `fruitByTaste` that takes an array of fruit objects `fruits` and returns an object where the keys are tastes and the values are arrays of fruit names
+/**
+ * 🌶️🌶️🌶️ `fruitByTaste` function:
+ * - Accepts:
+ *   - A `fruits` array of type `Fruit[]`.
+ * - Returns an object where:
+ *   - The **keys** are unique taste categories.
+ *   - The **values** are arrays of fruit names belonging to that taste.
+ *
+ * Example:
+ *  fruitByTaste(fruits);
+ *    // => {
+ *    //    Sweet: ["Apple", "Banana", "Grapes"],
+ *    //    Citrusy: ["Orange"],
+ *    //    Tangy: ["Kiwi"]
+ *    // }
+ */
 function fruitByTaste(fruits: Fruit[]): FruitByTaste {
   // Write your code here...
-  return {};
+
+  return {}; // replace empty object with what you see is fit
 }
-/**
- * console.log(fruitByTaste(fruits));
- * Output:
- * {
- *    Sweet: ["Apple", "Banana", "Grapes"],
- *    Citrusy: ["Orange"],
- *    Tangy: ["Kiwi"]
- * }
- */
 
 export { fruitByTaste, FruitByTaste };
