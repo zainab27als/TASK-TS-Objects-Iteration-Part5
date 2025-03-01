@@ -1,3 +1,4 @@
+// don't change this interface
 interface Fruit {
   id: number;
   name: string;
@@ -42,21 +43,52 @@ const fruits: Fruit[] = [
   },
 ];
 
-// 1) Write a `getFruitColor` function that accepts a `fruit` object as an argument, and returns the color of that `fruit` object
+/**
+ * 1) Using `getFruitColor` function that:
+ * - Accepts a `fruit` parameter of type `Fruit`.
+ * - Returns the color of the specified fruit.
+ * Example:
+ * getFruitColor(fruits[0]); // => "Red"
+ */
 function getFruitColor(fruit: Fruit): string {
   // write your code here...
-  return "Magenta";
-}
-// console.log(getFruitColor(fruits[0])); // Outputs: Red
 
-// 2) Write a `isFruitTasteMatching` function that accepts a `fruit` object as an argument and a `taste` string, return  true if the fruit's taste matches the provided description, otherwise returns false
+  return ""; // replace empty string with what you see is fit
+}
+
+/**
+ * 2) Using `isFruitTasteMatching` function:
+ * - Accepts:
+ *   - A `fruit` parameter of type `Fruit`.
+ *   - A `taste` parameter of type `string`.
+ * - Returns `true` if the fruit's taste matches the provided description, otherwise returns `false`.
+ * Example:
+ * isFruitTasteMatching(fruits[2], "Citrusy"); // => true
+ */
 function isFruitTasteMatching(fruit: Fruit, taste: string): boolean {
   // write your code here...
-  return !!-1;
-}
-// console.log(isFruitTasteMatching(fruits[2], "Citrusy")); // Outputs: true
 
-// 3) Write a `addFruit` function that accepts an array of fruit object `fruits` and the properties of a fruit (id, name, color, taste), it will add the new fruit to the end of the array, then returns the updated array
+  return false; // replace false with what you see is fit
+}
+
+/**
+ * 3) Using `addFruit` function:
+ * - Accepts:
+ *   - A `fruits` array of type `Fruit[]`.
+ *   - An `id` of type `number`
+ *   - A `name` of type `string`
+ *   - A `color` of type `string`
+ *   - A `taste` of type `string`
+ * - Creates a new `Fruit` object and adds it to the end of the array.
+ * - Returns the updated array of fruits.
+ * Example:
+ * addFruit(fruits, 506, "Mango", "Yellow", "Sweet");
+ * // => [
+ * //   { id: 501, name: "Apple", color: "Red", taste: "Sweet" },
+ * //   ...
+ * //   { id: 506, name: "Mango", color: "Yellow", taste: "Sweet" }
+ * // ]
+ */
 function addFruit(
   fruits: Fruit[],
   id: number,
@@ -65,16 +97,23 @@ function addFruit(
   taste: string
 ): Fruit[] {
   // write your code here...
-  return [];
-}
-// console.log(addFruit(fruits,  506,  "Mango", "Yellow", "Sweet" ));
 
-// 4) Write a `countSweetFruits`function that accepts an array of fruit objects `fruits`, and return the number of fruits with a sweet taste
+  return []; // replace empty array with what you see is fit
+}
+
+/**
+ * 4) Using `countSweetFruits` function:
+ * - Accepts:
+ *   - A `fruits` array of type `Fruit[]`.
+ * - Returns the number of fruits with a sweet taste.
+ * Example:
+ * countSweetFruits(fruits); // => 3
+ */
 function countSweetFruits(fruits: Fruit[]): number {
   // write your code here...
-  return Infinity;
+
+  return -1; // replace -1 with what you see is fit
 }
-// console.log(countSweetFruits(fruits)); // Outputs: 4
 
 export {
   Fruit,
