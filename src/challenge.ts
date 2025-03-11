@@ -60,8 +60,15 @@ interface FruitByTaste {
  */
 function fruitByTaste(fruits: Fruit[]): FruitByTaste {
   // Write your code here...
+  const result: FruitByTaste = {};
+  fruits.forEach((fruit) => {
+    if (!result[fruit.taste]) {
+      result[fruit.taste] = [];
+    }
+    result[fruit.taste].push(fruit.name);
+  });
 
-  return {}; // replace empty object with what you see is fit
+  return result; // replace empty object with what you see is fit
 }
 
 export { fruitByTaste, FruitByTaste };
